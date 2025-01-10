@@ -7,7 +7,37 @@
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    Hello World
+    <div class="hero">
+        <h1>Welcome to Our Website</h1>
+        <p>Discover amazing features and products that we offer.</p>
+        <button onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
+          Learn More
+        </button>
+      </div>
+    
+      <!-- Features Section -->
+      <section id="features" class="features container">
+        <div class="card">
+          <img src="./assets/forest.jpg" alt="Feature One">
+          <h3>Feature One</h3>
+          <p>Explore our first amazing feature that helps you achieve more.</p>
+        </div>
+        <div class="card">
+          <img src="./assets/mountains.jpg" alt="Feature Two">
+          <h3>Feature Two</h3>
+          <p>Discover the second feature designed to simplify your life.</p>
+        </div>
+        <div class="card">
+          <img src="./assets/waters.jpg" alt="Feature Three">
+          <h3>Feature Three</h3>
+          <p>Learn how our third feature brings value to your experience.</p>
+        </div>
+      </section>
+    
+      <!-- Footer -->
+      <footer>
+        <p>&copy; 2025 Your Company Name. All rights reserved.</p>
+      </footer>
     <script src="./script.js"></script>
 </body>
 </html>

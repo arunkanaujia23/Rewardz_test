@@ -1,0 +1,196 @@
+/* default.css */
+
+/* Reset/Normalize CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Base Styling */
+  body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #f9f9f9;
+    color: #333;
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  ul, ol {
+    list-style: none;
+  }
+  
+  button {
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Utility Classes */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('./assets/nature.jpg') no-repeat center center/cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+  }
+  
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+  }
+  
+  .hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .hero button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .hero button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Features Section */
+  .features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 40px 20px;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+  }
+  
+  .card img {
+    width: 100%;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .card h3 {
+    margin: 1rem 0;
+  }
+  
+  .card p {
+    color: #555;
+  }
+  
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    color: #555;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 2.5rem;
+    }
+  
+    .hero p {
+      font-size: 1.25rem;
+    }
+  
+    .hero button {
+      font-size: 0.9rem;
+      padding: 8px 16px;
+    }
+  
+    .features {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  /* Responsive Media Queries */
+  
+  /* Extra Small Devices (phones, < 576px) */
+  @media (max-width: 575.98px) {
+    body {
+      font-size: 14px;
+    }
+  
+    .container {
+      padding: 0 10px;
+    }
+    .hero h1 {
+        font-size: 2rem;
+      }
+    
+      .hero p {
+        font-size: 1rem;
+      }
+    
+      .hero button {
+        font-size: 0.8rem;
+        padding: 6px 12px;
+      }
+    
+      .card h3 {
+        font-size: 1.2rem;
+      }
+    
+      .card p {
+        font-size: 0.9rem;
+      }
+   
+  }
+  
+
+  
+  /* Medium Devices (tablets, 768px and up) */
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    .container {
+      max-width: 720px;
+    }
+  }
+  
+  /* Large Devices (desktops, 992px and up) */
+  @media (min-width: 992px) and (max-width: 1199.98px) {
+    .container {
+      max-width: 960px;
+    }
+  }
+  
+  /* Extra Large Devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .container {
+      max-width: 1140px;
+    }
+  }
+  
+
+  
