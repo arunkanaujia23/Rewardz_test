@@ -3,41 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Discover amazing features and products that we offer to enhance your experience.">
+    <meta name="keywords" content="features, products, website, amazing, discover">
+    <meta name="author" content="Your Company Name">
     <title>Rewardz</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <div class="hero">
-        <h1>Welcome to Our Website</h1>
-        <p>Discover amazing features and products that we offer.</p>
-        <button onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-          Learn More
-        </button>
-      </div>
-    
-      <!-- Features Section -->
-      <section id="features" class="features container">
-        <div class="card">
-          <img src="./assets/forest.jpg" alt="Feature One">
-          <h3>Feature One</h3>
-          <p>Explore our first amazing feature that helps you achieve more.</p>
+    <header>
+        <div class="hero" aria-labelledby="hero-title" aria-describedby="hero-description">
+            <h1 id="hero-title">Welcome to Our Website</h1>
+            <p id="hero-description">Discover amazing features and products that we offer.</p>
+            <button onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})" aria-label="Scroll to features section">
+                Learn More
+            </button>
         </div>
-        <div class="card">
-          <img src="./assets/mountains.jpg" alt="Feature Two">
-          <h3>Feature Two</h3>
-          <p>Discover the second feature designed to simplify your life.</p>
-        </div>
-        <div class="card">
-          <img src="./assets/waters.jpg" alt="Feature Three">
-          <h3>Feature Three</h3>
-          <p>Learn how our third feature brings value to your experience.</p>
-        </div>
-      </section>
-    
-      <!-- Footer -->
-      <footer>
+    </header>
+
+    <!-- Features Section -->
+    <main>
+        <section id="features" class="features container" aria-labelledby="features-title">
+            <!-- <h2 id="features-title">Our Features</h2> -->
+            <div class="card" aria-labelledby="feature-one-title">
+                <img src="./assets/forest.jpg" alt="A serene forest scene">
+                <h3 id="feature-one-title">Feature One</h3>
+                <p>Explore our first amazing feature that helps you achieve more.</p>
+            </div>
+            <div class="card" aria-labelledby="feature-two-title">
+                <img src="./assets/mountains.jpg" alt="Majestic mountains under a clear sky">
+                <h3 id="feature-two-title">Feature Two</h3>
+                <p>Discover the second feature designed to simplify your life.</p>
+            </div>
+            <div class="card" aria-labelledby="feature-three-title">
+                <img src="./assets/waters.jpg" alt="Calm waters with a beautiful reflection">
+                <h3 id="feature-three-title">Feature Three</h3>
+                <p>Learn how our third feature brings value to your experience.</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
         <p>&copy; 2025 Your Company Name. All rights reserved.</p>
-      </footer>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
